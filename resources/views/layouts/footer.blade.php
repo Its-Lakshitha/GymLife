@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 text-gray-300 py-16">
+<footer class="bg-black text-gray-300 py-16">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
         <!-- About -->
@@ -11,19 +11,19 @@
                 dolore magna aliqua endisse ultrices gravida lorem.
             </p>
             <div class="flex items-center gap-4 mt-6">
-                <a href="#" class="hover:text-[#f36100]">
+                <a href="#" class="hover:text-red-500">
                     <x-fab-facebook-f class="w-5 h-5"/>
                 </a>
-                <a href="#" class="hover:text-[#f36100]">
+                <a href="#" class="hover:text-red-500">
                     <x-fab-twitter class="w-5 h-5"/>
                 </a>
-                <a href="#" class="hover:text-[#f36100]">
+                <a href="#" class="hover:text-red-500">
                     <x-fab-youtube class="w-5 h-5"/>
                 </a>
-                <a href="#" class="hover:text-[#f36100]">
+                <a href="#" class="hover:text-red-500">
                     <x-fab-instagram class="w-5 h-5"/>
                 </a>
-                <a href="#" class="hover:text-[#f36100]">
+                <a href="#" class="hover:text-red-500">
                     <x-heroicon-o-envelope class="w-5 h-5"/>
                 </a>
             </div>

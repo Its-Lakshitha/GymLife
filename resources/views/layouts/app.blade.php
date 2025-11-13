@@ -18,10 +18,76 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css','resources/js/app.js'])
+
+    <!-- Theme toggle: wrap icons in fixed container and keep IDs for JS -->
+    <style>
+        /* filepath: C:\xampp\htdocs\gymlife\resources\views\layouts\navigation.blade.php (inline styles for theme toggle) */
+        #theme-toggle {
+            position: relative;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Ensure both icons occupy the same space so transitions are predictable */
+        #theme-toggle svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 28px;
+            height: 28px;
+            transition: opacity 280ms cubic-bezier(.2, .8, .2, 1), transform 420ms cubic-bezier(.2, .8, .2, 1);
+        }
+
+        /* in/out animations (use keyframes for entrance/exit) */
+        .anim-in {
+            animation: iconIn 420ms cubic-bezier(.2, .8, .2, 1) forwards;
+        }
+
+        .anim-out {
+            animation: iconOut 320ms cubic-bezier(.2, .8, .2, 1) forwards;
+        }
+
+        @keyframes iconIn {
+            0% {
+                transform: translateY(-6px) scale(0.94) rotate(-10deg);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(4px) scale(1.02) rotate(6deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes iconOut {
+            0% {
+                transform: translateY(0) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(6px) scale(0.92) rotate(10deg);
+                opacity: 0;
+            }
+        }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            #theme-toggle svg, .anim-in, .anim-out {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
-<div class="min-h-screen">
+<div class="min-h-screen bg-gray-100 dark:bg-[#0a0a0a]">
     @include('layouts.navigation')
 
     <!-- Page Heading -->
@@ -41,13 +107,11 @@
     @include('layouts.footer')
 </div>
 
-
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', () => {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-    });
-</script>
+<!-- Upscroller: appears when user is near bottom -->
+<button id="scrollToTopBtn"
+        class="hidden fixed bottom-6 right-6 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 z-50">
+    <x-heroicon-o-arrow-small-up class="w-5 h-5"/>
+</button>
 
 
 <!-- Swiper CSS -->
@@ -99,6 +163,26 @@
             ]
         });
     });
+</script>
+
+<script>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.remove("hidden");
+        } else {
+            scrollBtn.classList.add("hidden");
+        }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    });
+</script>
+
+<script>
+
 </script>
 </body>
 </html>

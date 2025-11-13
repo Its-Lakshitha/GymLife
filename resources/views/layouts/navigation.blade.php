@@ -1,4 +1,4 @@
-<header class="shadow-md fixed top-0 left-0 w-full z-50">
+<header class="absolute bg-transparent top-0 left-0 w-full z-50">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
 
         <!-- Logo -->
@@ -10,41 +10,53 @@
 
         <!-- Navigation -->
         <nav class="hidden lg:flex space-x-8">
-            <a href="{{ url('/') }}" class="text-gray-900 font-medium hover:text-red-600 transition">Home</a>
-            <a href="{{ url('/about-us') }}" class="text-gray-900 font-medium hover:text-red-600 transition">About
+            <a href="{{ url('/') }}" class="text-white font-medium hover:text-red-600 transition">Home</a>
+            <a href="{{ url('/about-us') }}" class="text-white font-medium hover:text-red-600 transition">About
                 Us</a>
-            <a href="{{ url('/class-details') }}" class="text-gray-900 font-medium hover:text-red-600 transition">Classes</a>
+            <a href="{{ url('/class-details') }}"
+               class="text-white font-medium hover:text-red-600 transition">Classes</a>
             <a href="{{ url('/services') }}"
-               class="text-gray-900 font-medium hover:text-red-600 transition">Services</a>
-            <a href="{{ url('/team') }}" class="text-gray-900 font-medium hover:text-red-600 transition">Our Team</a>
+               class="text-white font-medium hover:text-red-600 transition">Services</a>
+            <a href="{{ url('/team') }}" class="text-white font-medium hover:text-red-600 transition">Our
+                Team</a>
 
             <!-- Dropdown -->
             <div class="relative group">
-                <button class="flex items-center space-x-1 text-gray-900 font-medium hover:text-red-600 transition">
+                <button
+                    class="flex items-center space-x-1 text-white font-medium hover:text-red-600 transition">
                     <span>Pages</span>
                     <i class="fa fa-chevron-down text-sm"></i>
                 </button>
-                <ul class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">
-                    <li><a href="{{ url('/about-us') }}" class="block px-4 py-2 hover:bg-gray-100">About Us</a></li>
-                    <li><a href="{{ url('/class-timetable') }}" class="block px-4 py-2 hover:bg-gray-100">Classes
+                <ul class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-500">
+                    <li><a href="{{ url('/about-us') }}" class="block px-4 py-2 hover:text-red-500">About Us</a></li>
+                    <li><a href="{{ url('/class-timetable') }}" class="block px-4 py-2 hover:text-red-500">Classes
                             Timetable</a></li>
-                    <li><a href="{{ url('/bmi-calculator') }}" class="block px-4 py-2 hover:bg-gray-100">BMI
+                    <li><a href="{{ url('/bmi-calculator') }}" class="block px-4 py-2 hover:text-red-500">BMI
                             Calculator</a></li>
-                    <li><a href="{{ url('/team') }}" class="block px-4 py-2 hover:bg-gray-100">Our Team</a></li>
-                    <li><a href="{{ url('/gallery') }}" class="block px-4 py-2 hover:bg-gray-100">Gallery</a></li>
-                    <li><a href="{{ url('/blog') }}" class="block px-4 py-2 hover:bg-gray-100">Our Blog</a></li>
-                    <li><a href="{{ url('/404') }}" class="block px-4 py-2 hover:bg-gray-100">404</a></li>
+                    <li><a href="{{ url('/team') }}" class="block px-4 py-2 hover:text-red-500">Our Team</a></li>
+                    <li><a href="{{ url('/gallery') }}" class="block px-4 py-2 hover:text-red-500">Gallery</a></li>
+                    <li><a href="{{ url('/blog') }}" class="block px-4 py-2 hover:text-red-500">Our Blog</a></li>
+                    <li><a href="{{ url('/404') }}" class="block px-4 py-2 hover:text-red-500">404</a></li>
                 </ul>
             </div>
 
-            <a href="{{ url('/contact') }}" class="text-gray-900 font-medium hover:text-red-600 transition">Contact</a>
+            <a href="{{ url('/contact') }}" class="text-white font-medium hover:text-red-600 transition">Contact</a>
         </nav>
 
         <!-- Top Options -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-4 top-option">
             <!-- Search -->
             <button class="text-gray-700 hover:text-red-600 transition">
-                <i class="fa fa-search text-lg"></i>
+                <x-hugeicons-search-01 class="text-md"/>
+            </button>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="text-gray-700 hover:text-red-600 transition relative"
+                    aria-label="Toggle theme">
+                <span class="theme-container" aria-hidden="true">
+                    <x-heroicon-s-moon id="moon-icon" class="w-7 h-7 text-md hidden dark:block"/>
+                    <x-heroicon-s-sun id="sun-icon" class="w-7 h-7 text-md block dark:hidden"/>
+                </span>
             </button>
 
             <!-- Socials -->

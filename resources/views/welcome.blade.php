@@ -65,8 +65,9 @@
 
             <!-- Section Title -->
             <div class="text-center mb-16">
-                <span class="text-[#f36100] uppercase tracking-widest font-semibold text-sm">Why Choose Us?</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900">Push Your Limits Forward</h2>
+                <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">Why Choose Us?</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900 dark:text-white">Push Your Limits
+                    Forward</h2>
             </div>
 
             <!-- Feature Grid -->
@@ -74,13 +75,15 @@
 
                 <!-- Item 1 -->
                 <div
-                    class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl hover:shadow-[#f36100]/20 transition">
+                    class="bg-white dark:bg-gray-800/60 rounded-2xl shadow-md p-8 text-center transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300 dark:hover:shadow-none">
                     <div class="w-full flex justify-center">
-                        <x-hugeicons-treadmill-02
-                            class="w-20 h-20 bg-gray-300 rounded-full p-4 text-[#f36100] text-5xl mb-4"/>
+                        <div
+                            class="w-20 h-20 rounded-full p-4 mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-700/30  text-red-500 dark:text-red-400 transition-colors duration-300">
+                            <x-hugeicons-treadmill-02 class="w-12 h-12"/>
+                        </div>
                     </div>
-                    <h4 class="text-lg font-semibold mb-3 text-gray-800">Modern Equipment</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                    <h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-100">Modern Equipment</h4>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         dolore facilisis.
                     </p>
@@ -88,13 +91,15 @@
 
                 <!-- Item 2 -->
                 <div
-                    class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl hover:shadow-[#f36100]/20 transition">
+                    class="bg-white dark:bg-gray-800/60 rounded-2xl shadow-md p-8 text-center transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300 dark:hover:shadow-none">
                     <div class="w-full flex justify-center">
-                        <x-hugeicons-spoon-and-knife
-                            class="w-20 h-20 bg-gray-300 rounded-full p-4 text-[#f36100] text-5xl mb-4"/>
+                        <div
+                            class="w-20 h-20 rounded-full p-4 mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-700/30 text-red-500 dark:text-red-400 transition-colors duration-300">
+                            <x-hugeicons-spoon-and-knife class="w-12 h-12"/>
+                        </div>
                     </div>
-                    <h4 class="text-lg font-semibold mb-3 text-gray-800">Healthy Nutrition Plan</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                    <h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-100">Healthy Nutrition Plan</h4>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                         facilisis.
                     </p>
@@ -102,13 +107,16 @@
 
                 <!-- Item 3 -->
                 <div
-                    class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl hover:shadow-[#f36100]/20 transition">
+                    class="bg-white dark:bg-gray-800/60 rounded-2xl shadow-md p-8 text-center transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300 dark:hover:shadow-none">
                     <div class="w-full flex justify-center">
-                        <x-hugeicons-dumbbell-02
-                            class="w-20 h-20 bg-gray-300 rounded-full p-4 text-[#f36100] text-5xl mb-4"/>
+                        <div
+                            class="w-20 h-20 rounded-full p-4 mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-700/30 text-red-500 dark:text-red-400 transition-colors duration-300">
+                            <x-hugeicons-dumbbell-02 class="w-12 h-12"/>
+                        </div>
                     </div>
-                    <h4 class="text-lg font-semibold mb-3 text-gray-800">Professional Training Plan</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                    <h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-100">Professional Training
+                        Plan</h4>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         dolore facilisis.
                     </p>
@@ -116,13 +124,15 @@
 
                 <!-- Item 4 -->
                 <div
-                    class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl hover:shadow-[#f36100]/20 transition">
+                    class="bg-white dark:bg-gray-800/60 rounded-2xl shadow-md p-8 text-center transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300 dark:hover:shadow-none">
                     <div class="w-full flex justify-center">
-                        <x-fas-heart-pulse
-                            class="w-20 h-20 bg-gray-300 rounded-full p-4 text-[#f36100] text-5xl mb-4"/>
+                        <div
+                            class="w-20 h-20 rounded-full p-4 mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-700/30 text-red-500 dark:text-red-400 transition-colors duration-300">
+                            <x-fas-heart-pulse class="w-12 h-12"/>
+                        </div>
                     </div>
-                    <h4 class="text-lg font-semibold mb-3 text-gray-800">Unique to Your Needs</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                    <h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-100">Unique to Your Needs</h4>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                         Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                         facilisis.
                     </p>
@@ -138,7 +148,7 @@
 
             <!-- Section Title -->
             <div class="text-center mb-16">
-                <span class="text-[#f36100] uppercase tracking-widest font-semibold text-sm">Our Classes</span>
+                <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">Our Classes</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900">What We Can Offer</h2>
             </div>
 
@@ -154,7 +164,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <span class="block text-sm uppercase tracking-wide text-red-400">Strength</span>
                         <h5 class="text-xl font-semibold">Weightlifting</h5>
-                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-[#f36100] transition">
+                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-red-500 transition">
                             <i class="fa fa-angle-right text-xl"></i>
                         </a>
                     </div>
@@ -169,7 +179,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <span class="block text-sm uppercase tracking-wide text-red-400">Cardio</span>
                         <h5 class="text-xl font-semibold">Indoor Cycling</h5>
-                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-[#f36100] transition">
+                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-red-500 transition">
                             <i class="fa fa-angle-right text-xl"></i>
                         </a>
                     </div>
@@ -184,7 +194,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <span class="block text-sm uppercase tracking-wide text-red-400">Strength</span>
                         <h5 class="text-xl font-semibold">Kettlebell Power</h5>
-                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-[#f36100] transition">
+                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-red-500 transition">
                             <i class="fa fa-angle-right text-xl"></i>
                         </a>
                     </div>
@@ -200,7 +210,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <span class="block text-sm uppercase tracking-wide text-red-400">Cardio</span>
                         <h4 class="text-2xl font-semibold">Indoor Cycling</h4>
-                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-[#f36100] transition">
+                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-red-500 transition">
                             <i class="fa fa-angle-right text-xl"></i>
                         </a>
                     </div>
@@ -215,7 +225,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <span class="block text-sm uppercase tracking-wide text-red-400">Training</span>
                         <h4 class="text-2xl font-semibold">Boxing</h4>
-                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-[#f36100] transition">
+                        <a href="#" class="inline-block mt-3 text-red-400 hover:text-red-500 transition">
                             <i class="fa fa-angle-right text-xl"></i>
                         </a>
                     </div>
@@ -241,7 +251,7 @@
                     </div>
                     <a
                         href="#"
-                        class="primary-btn-outline !text-white transition-all duration-300 hover:bg-[#f36100] hover:border-[#f36100]"
+                        class="primary-btn-outline !text-white transition-all duration-300 hover:bg-red-500 hover:border-red-500"
                     >
                         Appointment
                     </a>
@@ -257,7 +267,7 @@
         <div class="container mx-auto px-4">
             <!-- Section Title -->
             <div class="text-center mb-16">
-                <span class="text-[#f36100] uppercase tracking-widest font-semibold">Our Plan</span>
+                <span class="text-red-500 uppercase tracking-widest font-semibold">Our Plan</span>
                 <h2 class="text-4xl font-bold text-gray-800 mt-2">Choose your pricing plan</h2>
             </div>
 
@@ -338,14 +348,14 @@
             >
                 <div class="text-center md:text-left mb-6 md:mb-0">
         <span
-            class="text-[#f36100] font-semibold uppercase tracking-wide">Our Team</span>
+            class="text-red-500 font-semibold uppercase tracking-wide">Our Team</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
                         Train With Experts
                     </h2>
                 </div>
                 <a
                     href="#"
-                    class="primary-btn-outline bg-transparent border-[#f36100] transition-all duration-300 hover:bg-[#f36100]"
+                    class="primary-btn-outline bg-transparent border-red-500 transition-all duration-300 hover:bg-red-500"
                 >
                     Appointment
                 </a>
