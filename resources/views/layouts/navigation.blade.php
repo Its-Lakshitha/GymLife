@@ -10,12 +10,12 @@
 
         <!-- Navigation -->
         <nav class="hidden lg:flex space-x-8">
-            <a href="{{ url('/') }}" class="text-white font-medium hover:text-red-600 transition">Home</a>
-            <a href="{{ url('/about-us') }}" class="text-white font-medium hover:text-red-600 transition">About
+            <a href="{{ route('welcome') }}" class="text-white font-medium hover:text-red-600 transition">Home</a>
+            <a href="{{ route('about') }}" class="text-white font-medium hover:text-red-600 transition">About
                 Us</a>
             <a href="{{ url('/class-details') }}"
                class="text-white font-medium hover:text-red-600 transition">Classes</a>
-            <a href="{{ url('/services') }}"
+            <a href="{{ route('services') }}"
                class="text-white font-medium hover:text-red-600 transition">Services</a>
             <a href="{{ url('/team') }}" class="text-white font-medium hover:text-red-600 transition">Our
                 Team</a>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
 
-            <a href="{{ url('/contact') }}" class="text-white font-medium hover:text-red-600 transition">Contact</a>
+            <a href="{{ route('contact') }}" class="text-white font-medium hover:text-red-600 transition">Contact</a>
         </nav>
 
         <!-- Top Options -->
