@@ -5,7 +5,6 @@
         class="breadcrumb-section relative bg-cover bg-center bg-no-repeat py-24"
         style="background-image: url('{{ asset('img/breadcrumb-bg.jpg') }}')"
     >
-        <div class="bg-black/60 absolute inset-0"></div>
 
         <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white breadcrumb-text">
             <h2 class="text-4xl font-bold mb-4">About Us</h2>

@@ -8,8 +8,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -22,7 +22,6 @@
 
     <!-- Theme toggle: wrap icons in fixed container and keep IDs for JS -->
     <style>
-        /* filepath: C:\xampp\htdocs\gymlife\resources\views\layouts\navigation.blade.php (inline styles for theme toggle) */
         #theme-toggle {
             position: relative;
             width: 28px;
@@ -32,7 +31,6 @@
             justify-content: center;
         }
 
-        /* Ensure both icons occupy the same space so transitions are predictable */
         #theme-toggle svg {
             position: absolute;
             top: 0;
@@ -42,7 +40,6 @@
             transition: opacity 280ms cubic-bezier(.2, .8, .2, 1), transform 420ms cubic-bezier(.2, .8, .2, 1);
         }
 
-        /* in/out animations (use keyframes for entrance/exit) */
         .anim-in {
             animation: iconIn 420ms cubic-bezier(.2, .8, .2, 1) forwards;
         }
@@ -77,7 +74,6 @@
             }
         }
 
-        /* Respect reduced motion */
         @media (prefers-reduced-motion: reduce) {
             #theme-toggle svg, .anim-in, .anim-out {
                 animation: none !important;
@@ -107,23 +103,22 @@
     @include('layouts.footer')
 </div>
 
-<!-- Upscroller: appears when user is near bottom -->
+
 <button id="scrollToTopBtn"
         class="hidden fixed bottom-6 right-6 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 z-50">
     <x-heroicon-o-arrow-small-up class="w-5 h-5"/>
 </button>
 
 
-<!-- Swiper CSS -->
 <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
-<!-- Swiper JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
+
 <script>
     const swiper = new Swiper('.hero-slider', {
         loop: true,
