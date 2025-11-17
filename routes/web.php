@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -24,5 +24,9 @@ Route::get('about-us', function () {
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+})->name('contact');
 
 require __DIR__.'/auth.php';

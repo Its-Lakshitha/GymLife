@@ -9,12 +9,12 @@
         <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white breadcrumb-text">
             <h2 class="text-4xl font-bold mb-4">Services</h2>
             <div class="flex justify-center items-center gap-2 text-gray-300 text-sm bt-option">
-                <a href="{{ url('/') }}" class="hover:text-white transition me-0">Home ></a>
+                <a href="{{ route('welcome') }}" class="hover:text-white transition me-0">Home ></a>
                 <span> Services</span>
             </div>
         </div>
     </section>
-
+    
     <section class="container mx-auto px-4 py-16">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Section Header -->
