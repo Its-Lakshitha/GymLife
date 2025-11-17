@@ -21,4 +21,8 @@ Route::get('about-us', function () {
     return view('about-us');
 })->name('about');
 
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
 require __DIR__.'/auth.php';
