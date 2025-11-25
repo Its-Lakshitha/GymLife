@@ -1,83 +1,97 @@
-# gymlife
+# GymLife
 
-## Overview
-
-gymlife is a lightweight web application for managing gym-related data (members, trainers, workouts, schedules, and
-progress). The project is built to run on a local PHP/Apache environment (XAMPP) with a MySQL database.
+GymLife is a modern web application for managing gym-related data, including members, trainers, workouts, schedules, and progress tracking. It is built with **Laravel 12**, **Livewire**, and **Tailwind CSS**.
 
 ## Key Functionalities
 
-- User authentication (members and admins)
-- Member management: create, update, view member profiles
-- Trainer management: schedule and assign trainers
-- Workout plans: create and track workouts for members
-- Class/schedule management: add and view class times
-- Progress tracking: store measurements and progress logs
-- Simple admin panel to manage data
+- **User Authentication**: Secure login for members and admins.
+- **Member Management**: Create, update, and view member profiles.
+- **Trainer Management**: Schedule and assign trainers.
+- **Workout Plans**: Create and track personalized workout plans.
+- **Class Schedule**: Manage and view class timings.
+- **Progress Tracking**: Log and visualize member progress.
+- **Admin Panel**: Easy-to-use dashboard for data management.
 
 ## Technologies
 
-- PHP (server-side)
-- MySQL / MariaDB (database)
-- Apache (via XAMPP)
-- HTML, CSS, JavaScript (front-end)
-- Common libraries (Bootstrap, jQuery) — adjust according to project files
+- **[Laravel 12](https://laravel.com)**: The PHP Framework for Web Artisans.
+- **[Livewire](https://livewire.laravel.com)**: Full-stack framework for Laravel.
+- **[Tailwind CSS](https://tailwindcss.com)**: A utility-first CSS framework.
+- **[Vite](https://vitejs.dev)**: Next Generation Frontend Tooling.
+- **MySQL / MariaDB**: Relational database management.
 
-## Setup (local using XAMPP)
+## Requirements
 
-1. Install XAMPP: https://www.apachefriends.org/
-2. Place project folder:
-    - Copy the `gymlife` folder into `C:\xampp\htdocs\`
-3. Start services:
-    - Open XAMPP Control Panel → Start Apache and MySQL
-4. Database:
-    - If a SQL dump exists (e.g., `database.sql`), import it via phpMyAdmin or command line:
-        - phpMyAdmin: http://localhost/phpmyadmin → Import → choose SQL file
-        - CLI: `mysql -u root -p your_db_name < database.sql`
-    - Create a database (e.g., `gymlife`) and update DB credentials in the project config (search for `config.php`,
-      `.env` or DB connection files)
-5. Access the app:
-    - Open a browser: http://localhost/gymlife/
+- PHP 8.2 or higher
+- Composer
+- Node.js & NPM
 
-## Configuration hints
+## Installation
 
-- Locate DB settings (commonly in `config.php`, `db.php`, or an `.env` file) and update host/user/password/database.
-- Ensure file permissions are correct for any upload directories (if used).
-- If using Composer or npm, run `composer install` or `npm install` in the project root (only if those files exist).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/gymlife.git
+   cd gymlife
+   ```
 
-## Project structure (typical)
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-- /assets or /public — CSS, JS, images
-- /includes or /app — application logic, DB connections
-- /views or /templates — HTML/PHP views
-- index.php — application entry
-- README.md — this file
+3. **Install Node.js dependencies**
+   ```bash
+   npm install
+   ```
 
-(Adjust names above to match the actual repository layout.)
+4. **Environment Setup**
+   Copy the example environment file and configure your database credentials:
+   ```bash
+   cp .env.example .env
+   ```
+   Update the `.env` file with your database settings:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=gymlife
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+5. **Generate Application Key**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run Migrations**
+   Set up the database tables:
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Build Assets**
+   Compile the frontend assets:
+   ```bash
+   npm run build
+   ```
 
 ## Usage
 
-- Register or login (if authentication exists).
-- Use admin panel to add trainers, classes, and members.
-- Create workout plans and assign them to members.
-- View member progress and schedules.
+Start the local development server:
 
-## Troubleshooting
+```bash
+php artisan serve
+```
 
-- Blank pages: enable PHP errors in `php.ini` or check Apache error log.
-- DB connection issues: verify credentials and that MySQL is running.
-- 404 when accessing routes: confirm files are in `C:\xampp\htdocs\gymlife` and you're using the correct URL (
-  `/gymlife/`).
+Access the application at `http://localhost:8000`.
 
-## Contributing
+To run the frontend build in watch mode during development:
 
-- Fork the repo, create a feature branch, commit changes, and open a pull request.
-- Keep changes focused and include short descriptions in commits.
+```bash
+npm run dev
+```
 
 ## License
 
-- Add your preferred license or contact the project owner. (No license file included by default.)
-
-## Contact
-
-- For questions or issues, contact the project maintainer or open an issue in the repository.
+The GymLife software is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

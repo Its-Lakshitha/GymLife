@@ -9,14 +9,14 @@
         <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white breadcrumb-text">
             <h2 class="text-4xl font-bold mb-4">About Us</h2>
             <div class="flex justify-center items-center gap-2 text-gray-300 text-sm bt-option">
-                <a href="{{ route('welcome') }}" class="hover:text-white transition me-0">Home ></a>
+                <a href="{{ url('/') }}" class="hover:text-white transition me-0">Home ></a>
                 <span> About</span>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="">
 
             <!-- Section Title -->
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col lg:flex-row w-full">
+    <section class="flex flex-col lg:flex-row w-full fade-in-section">
         <!-- Left Side: Video Section -->
         <div
             class="relative w-full lg:w-1/2 h-80 lg:h-auto bg-cover bg-center"
@@ -166,7 +166,7 @@
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-16 fade-in-section">
         <div class="container mx-auto px-6">
             <!-- Section Title -->
             <div class="text-center mb-10 ">
