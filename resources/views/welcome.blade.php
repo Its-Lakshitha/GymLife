@@ -60,7 +60,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="">
 
             <!-- Section Title -->
@@ -133,7 +133,7 @@
     </section>
 
     <!-- Our Classes Section -->
-    <section class="container mx-auto px-4 py-20 ">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="container mx-auto px-6">
 
             <!-- Section Title -->
@@ -227,7 +227,7 @@
 
     <!-- Banner --->
     <section
-        class="relative bg-cover bg-center bg-no-repeat py-20"
+        class="relative bg-cover bg-center bg-no-repeat py-20 fade-in-section"
         style="background-image: url('{{ asset('img/banner-bg.jpg') }}');"
     >
         <div class="container mx-auto px-4 z-10">
@@ -253,7 +253,7 @@
     </section>
 
     <!--- Planning packages -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="container mx-auto px-4">
             <!-- Section Title -->
             <div class="text-center mb-16">
@@ -273,7 +273,7 @@
     </section>
 
     <!-- Gallery --->
-    <section class="gallery-section">
+    <section class="gallery-section fade-in-section">
         <div class="gallery">
             <div>
 
@@ -330,7 +330,7 @@
     </section>
 
     <!--- Coaches --->
-    <section class="container mx-auto px-4 py-16">
+    <section class="container mx-auto px-4 py-16 fade-in-section">
         <div class="">
             <!-- Section Header -->
             <div
@@ -418,7 +418,7 @@
         </div>
     </section>
 
-    <section class="gettouch-section text-white py-12">
+    <section class="gettouch-section text-white py-12 fade-in-section">
         <div
             class="container max-w-6xl mx-auto px-6 flex flex-col sm:flex-row sm:flex-wrap lg:justify-evenly gap-8 text-center md:text-left">
 
