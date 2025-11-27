@@ -80,6 +80,28 @@
                 transition: none !important;
             }
         }
+
+        /* Custom Slick Dots */
+        .slick-dots {
+            bottom: -40px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .slick-dots li {
+            margin: 0;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #ef4444; /* Red-500 */
+            opacity: 0.5;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #ef4444;
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">

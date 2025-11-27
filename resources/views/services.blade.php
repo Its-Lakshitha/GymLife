@@ -14,7 +14,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="container mx-auto px-4 py-16">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Section Header -->
@@ -34,7 +34,7 @@
     </section>
 
     <section
-        class="relative bg-cover bg-center bg-no-repeat py-40 text-white"
+        class="relative bg-cover bg-center bg-no-repeat py-40 text-white fade-in-section"
         style="background-image: url('{{asset('img/banner-bg.jpg')}}');">
 
         <div class="relative z-10 max-w-6xl mx-auto px-4 text-center uppercase">
@@ -56,7 +56,7 @@
     </section>
 
     <!-- NEW: Meal Plans Section -->
-    <section class="container mx-auto px-4 py-16">
+    <section class="container mx-auto px-4 py-16 fade-in-section">
         <div class="text-center mb-8">
             <span class="text-lg text-red-600 font-semibold uppercase tracking-wider">Nutrition</span>
             <h3 class="text-4xl font-bold mt-2 text-gray-900 dark:text-white">Meal Plans to Fuel Your Progress</h3>
@@ -90,7 +90,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Choose
                     Plan</a>
             </div>
@@ -122,7 +122,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Choose
                     Plan</a>
             </div>
@@ -154,7 +154,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Request
                     Quote</a>
             </div>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- NEW: Workout Plans Section -->
-    <section class="container mx-auto px-4 py-16">
+    <section class="container mx-auto px-4 py-16 fade-in-section">
         <div class="text-center mb-8">
             <span class="text-lg text-red-600 font-semibold uppercase tracking-wider">Training</span>
             <h3 class="text-4xl font-bold mt-2 text-gray-900 dark:text-white">Workout Plans for Every Goal</h3>
@@ -196,7 +196,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>
@@ -228,7 +228,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>
@@ -260,7 +260,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>

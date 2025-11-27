@@ -13,86 +13,104 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery-section py-20 px-4 fade-in-section">
+    <section class="py-20 px-4 fade-in-section">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-1.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-1.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
                 <!-- Gallery Item 2 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-2.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-2.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
                 <!-- Gallery Item 3 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-3.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-3.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
                 <!-- Gallery Item 4 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-4.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-4.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
                 <!-- Gallery Item 5 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-5.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-5.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
                 <!-- Gallery Item 6 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-6.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-6.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
-                 <!-- Gallery Item 7 -->
+                <!-- Gallery Item 7 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-7.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-7.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
-                 <!-- Gallery Item 8 -->
+                <!-- Gallery Item 8 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-8.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-8.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
 
-                 <!-- Gallery Item 9 -->
+                <!-- Gallery Item 9 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64 md:h-80">
-                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                         style="background-image: url('{{ asset('img/gallery/gallery-9.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div
+                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style="background-image: url('{{ asset('img/gallery/gallery-9.jpg') }}');"></div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <x-heroicon-o-plus class="w-12 h-12 text-red-500"/>
                     </div>
                 </div>
@@ -101,22 +119,24 @@
     </section>
 
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+    <div id="lightbox"
+         class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
         <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-red-500 transition">
             <x-heroicon-o-x-mark class="w-10 h-10"/>
         </button>
-        <img id="lightbox-img" src="" alt="Gallery Image" class="max-w-full max-h-full rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
+        <img id="lightbox-img" src="" alt="Gallery Image"
+             class="max-w-full max-h-full rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const closeBtn = document.getElementById('lightbox-close');
             const galleryItems = document.querySelectorAll('.gallery-section .group');
 
             galleryItems.forEach(item => {
-                item.addEventListener('click', function() {
+                item.addEventListener('click', function () {
                     const bgDiv = this.querySelector('div[style*="background-image"]');
                     if (bgDiv) {
                         const style = bgDiv.getAttribute('style');
@@ -147,13 +167,13 @@
 
             closeBtn.addEventListener('click', closeLightbox);
 
-            lightbox.addEventListener('click', function(e) {
+            lightbox.addEventListener('click', function (e) {
                 if (e.target === lightbox) {
                     closeLightbox();
                 }
             });
 
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
                     closeLightbox();
                 }

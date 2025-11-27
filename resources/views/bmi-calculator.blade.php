@@ -13,38 +13,43 @@
     </section>
 
     <!-- BMI Calculator Section -->
-    <section class="bmi-calculator-section py-20 px-4 bg-gray-50 dark:bg-gray-900 fade-in-section">
+    <section class="py-20 px-4 fade-in-section">
         <div class="container mx-auto">
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 <!-- Calculator Form -->
                 <div class="w-full lg:w-1/2">
                     <div class="text-left mb-8">
                         <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">BMI Calculator</span>
-                        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900 dark:text-white">Calculate Your Body Mass Index</h2>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900 dark:text-white">Calculate Your
+                            Body Mass Index</h2>
                         <p class="text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
                             The Body Mass Index (BMI) calculator calculates body mass index from your weight and height.
                         </p>
                     </div>
 
-                    <form id="bmi-form" class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+                    <form id="bmi-form" class="bg-white dark:bg-gray-800/60 p-8 rounded-2xl shadow-lg">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
-                                <label for="height" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Height / cm</label>
+                                <label for="height" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Height
+                                    / cm</label>
                                 <input type="number" id="height" placeholder="Height" required
                                        class="w-full bg-gray-100 dark:bg-gray-700 border-none rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:ring-2 focus:ring-red-500">
                             </div>
                             <div>
-                                <label for="weight" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Weight / kg</label>
+                                <label for="weight" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Weight
+                                    / kg</label>
                                 <input type="number" id="weight" placeholder="Weight" required
                                        class="w-full bg-gray-100 dark:bg-gray-700 border-none rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:ring-2 focus:ring-red-500">
                             </div>
                             <div>
-                                <label for="age" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Age</label>
+                                <label for="age"
+                                       class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Age</label>
                                 <input type="number" id="age" placeholder="Age"
                                        class="w-full bg-gray-100 dark:bg-gray-700 border-none rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:ring-2 focus:ring-red-500">
                             </div>
                             <div>
-                                <label for="sex" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Sex</label>
+                                <label for="sex"
+                                       class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Sex</label>
                                 <select id="sex"
                                         class="w-full bg-gray-100 dark:bg-gray-700 border-none rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:ring-2 focus:ring-red-500">
                                     <option value="male">Male</option>
@@ -54,7 +59,7 @@
                         </div>
                         <button type="submit"
                                 class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-lg transition-transform hover:scale-105">
-                            CALCULATE
+                            Calculate
                         </button>
                     </form>
                 </div>
@@ -91,8 +96,10 @@
                         </table>
 
                         <div id="result-display" class="mt-8 hidden">
-                            <p class="text-lg">Your BMI is: <span id="bmi-value" class="font-bold text-red-500 text-2xl"></span></p>
-                            <p class="text-lg mt-2">Status: <span id="bmi-status" class="font-bold text-white"></span></p>
+                            <p class="text-lg">Your BMI is: <span id="bmi-value"
+                                                                  class="font-bold text-red-500 text-2xl"></span></p>
+                            <p class="text-lg mt-2">Status: <span id="bmi-status" class="font-bold text-white"></span>
+                            </p>
                         </div>
                     </div>
                 </div>
