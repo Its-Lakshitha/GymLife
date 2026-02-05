@@ -17,7 +17,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20">
+    <section class="py-20 fade-in-section">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
@@ -74,7 +74,11 @@
 
                 <!-- Right Form -->
                 <div>
-                    <form action="#" method="post" class="space-y-4 p-6">
+                    <div id="contact-success-message" class="hidden mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+                        <strong class="font-bold">Message Sent!</strong>
+                        <span class="block sm:inline">Thank you for contacting us. We will get back to you soon.</span>
+                    </div>
+                    <form id="contact-form" action="#" method="post" class="space-y-4 p-6">
                         <input
                             type="text"
                             name="name"
@@ -125,3 +129,21 @@
 
 
 </x-app-layout>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Simulate form submission
+        const button = this.querySelector('button[type="submit"]');
+        const originalText = button.innerText;
+        button.disabled = true;
+        button.innerText = 'Sending...';
+
+        setTimeout(() => {
+            document.getElementById('contact-success-message').classList.remove('hidden');
+            this.reset();
+            button.disabled = false;
+            button.innerText = originalText;
+        }, 1500);
+    });
+</script>
