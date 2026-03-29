@@ -10,14 +10,14 @@
 
         <!-- Navigation -->
         <nav class="hidden lg:flex space-x-8">
-            <a href="{{ url('/') }}" class="text-white font-medium hover:text-red-600 transition">Home</a>
-            <a href="{{ url('/about-us') }}" class="text-white font-medium hover:text-red-600 transition">About
+            <a href="{{ route('welcome') }}" class="text-white font-medium hover:text-red-600 transition">Home</a>
+            <a href="{{ route('about') }}" class="text-white font-medium hover:text-red-600 transition">About
                 Us</a>
-            <a href="{{ url('/class-details') }}"
+            <a href="{{ route('classes') }}"
                class="text-white font-medium hover:text-red-600 transition">Classes</a>
-            <a href="{{ url('/services') }}"
+            <a href="{{ route('services') }}"
                class="text-white font-medium hover:text-red-600 transition">Services</a>
-            <a href="{{ url('/team') }}" class="text-white font-medium hover:text-red-600 transition">Our
+            <a href="{{ route('team') }}" class="text-white font-medium hover:text-red-600 transition">Our
                 Team</a>
 
             <!-- Dropdown -->
@@ -31,16 +31,16 @@
                     <li><a href="{{ url('/about-us') }}" class="block px-4 py-2 hover:text-red-500">About Us</a></li>
                     <li><a href="{{ url('/class-timetable') }}" class="block px-4 py-2 hover:text-red-500">Classes
                             Timetable</a></li>
-                    <li><a href="{{ url('/bmi-calculator') }}" class="block px-4 py-2 hover:text-red-500">BMI
+                    <li><a href="{{ route('bmi') }}" class="block px-4 py-2 hover:text-red-500">BMI
                             Calculator</a></li>
-                    <li><a href="{{ url('/team') }}" class="block px-4 py-2 hover:text-red-500">Our Team</a></li>
-                    <li><a href="{{ url('/gallery') }}" class="block px-4 py-2 hover:text-red-500">Gallery</a></li>
-                    <li><a href="{{ url('/blog') }}" class="block px-4 py-2 hover:text-red-500">Our Blog</a></li>
+                    <li><a href="{{ route('team') }}" class="block px-4 py-2 hover:text-red-500">Our Team</a></li>
+                    <li><a href="{{ route('gallery') }}" class="block px-4 py-2 hover:text-red-500">Gallery</a></li>
+                    <li><a href="{{ route('blog') }}" class="block px-4 py-2 hover:text-red-500">Our Blog</a></li>
                     <li><a href="{{ url('/404') }}" class="block px-4 py-2 hover:text-red-500">404</a></li>
                 </ul>
             </div>
 
-            <a href="{{ url('/contact') }}" class="text-white font-medium hover:text-red-600 transition">Contact</a>
+            <a href="{{ route('contact') }}" class="text-white font-medium hover:text-red-600 transition">Contact</a>
         </nav>
 
         <!-- Top Options -->

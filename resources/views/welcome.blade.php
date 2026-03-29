@@ -149,7 +149,7 @@
             <!-- Section Title -->
             <div class="text-center mb-16">
                 <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">Our Classes</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900">What We Can Offer</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-gray-900 dark:text-white">What We Can Offer</h2>
             </div>
 
             <!-- Classes Grid -->
@@ -268,7 +268,7 @@
             <!-- Section Title -->
             <div class="text-center mb-16">
                 <span class="text-red-500 uppercase tracking-widest font-semibold">Our Plan</span>
-                <h2 class="text-4xl font-bold text-gray-800 mt-2">Choose your pricing plan</h2>
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-white mt-2">Choose your pricing plan</h2>
             </div>
 
             <!-- Pricing Cards -->
@@ -349,13 +349,13 @@
                 <div class="text-center md:text-left mb-6 md:mb-0">
         <span
             class="text-red-500 font-semibold uppercase tracking-wide">Our Team</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
                         Train With Experts
                     </h2>
                 </div>
                 <a
                     href="#"
-                    class="primary-btn-outline bg-transparent border-red-500 transition-all duration-300 hover:bg-red-500"
+                    class="primary-btn-outline bg-transparent border-red-500 transition-all duration-300 hover:bg-red-500 dark:text-white"
                 >
                     Appointment
                 </a>
@@ -442,7 +442,7 @@
 
             <!-- Phone Numbers -->
             <div class="flex flex-col justify-center sm:flex-row items-center sm:items-start space-y-4 gt-text">
-                <x-hugeicons-smart-phone-01/>
+                <x-heroicon-s-phone/>
                 <ul class="flex space-x-2">
                     <li class="text-gray-300">125-711-811</li>
                     <li class="text-gray-300">

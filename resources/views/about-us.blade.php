@@ -5,7 +5,6 @@
         class="breadcrumb-section relative bg-cover bg-center bg-no-repeat py-24"
         style="background-image: url('{{ asset('img/breadcrumb-bg.jpg') }}')"
     >
-        <div class="bg-black/60 absolute inset-0"></div>
 
         <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white breadcrumb-text">
             <h2 class="text-4xl font-bold mb-4">About Us</h2>
@@ -17,7 +16,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="">
 
             <!-- Section Title -->
@@ -99,7 +98,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col lg:flex-row w-full">
+    <section class="flex flex-col lg:flex-row w-full fade-in-section">
         <!-- Left Side: Video Section -->
         <div
             class="relative w-full lg:w-1/2 h-80 lg:h-auto bg-cover bg-center"
@@ -167,7 +166,7 @@
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-16 fade-in-section">
         <div class="container mx-auto px-6">
             <!-- Section Title -->
             <div class="text-center mb-10 ">
