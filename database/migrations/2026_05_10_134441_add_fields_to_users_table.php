@@ -40,7 +40,7 @@ return new class extends Migration
                 'date_of_birth',
                 'gender',
                 'user_status',
-            ])
+            ]);
         });
     }
 };

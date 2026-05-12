@@ -53,9 +53,29 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'date_of_birth' => 'date',
+            'last_login_at' => 'datetime',
         ];
     }
 
+    public function role(){
+
+    }
+
+    public function isAdmin(): bool
+    {
+        return ($this->role)->slug === 'admin';
+    }
+
+    public function isTrainer(): bool
+    {
+        return ($this->role)->slug === 'trainer';
+    }
+
+    public function isMember(): bool
+    {
+        return ($this->role)->slug === 'member';
+    }
     /**
      * Get the user's initials
      */
