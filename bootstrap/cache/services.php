@@ -44,9 +44,10 @@
     40 => 'Carbon\\Laravel\\ServiceProvider',
     41 => 'Termwind\\Laravel\\TermwindServiceProvider',
     42 => 'OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider',
-    43 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
-    44 => 'App\\Providers\\AppServiceProvider',
-    45 => 'App\\Providers\\FortifyServiceProvider',
+    43 => 'Postare\\BladeMdi\\BladeMdiServiceProvider',
+    44 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
+    45 => 'App\\Providers\\AppServiceProvider',
+    46 => 'App\\Providers\\FortifyServiceProvider',
   ),
   'eager' => 
   array (
@@ -80,9 +81,10 @@
     27 => 'Carbon\\Laravel\\ServiceProvider',
     28 => 'Termwind\\Laravel\\TermwindServiceProvider',
     29 => 'OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider',
-    30 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
-    31 => 'App\\Providers\\AppServiceProvider',
-    32 => 'App\\Providers\\FortifyServiceProvider',
+    30 => 'Postare\\BladeMdi\\BladeMdiServiceProvider',
+    31 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
+    32 => 'App\\Providers\\AppServiceProvider',
+    33 => 'App\\Providers\\FortifyServiceProvider',
   ),
   'deferred' => 
   array (
