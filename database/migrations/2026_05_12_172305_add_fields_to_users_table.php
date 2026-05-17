@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('id');
-            $table->foreignUlid('role_id')->constrained('roles');
+            $table->ulid('id')->primary()->first();
+            $table->foreignUlid('role_id')->constrained('roles')->cascadeOnDelete();
             $table->renameColumn('name', 'first_name');
             $table->string('last_name')->after('first_name');
             $table->string('phone_number')->after('email');
@@ -30,10 +31,11 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->ulid('id')->primary();
-            $table->renameColumn('first_name', 'name');
+            $table->renameColumn('name', 'first_name');
             $table->dropColumn([
+                'id',
                 'role_id',
+                'first_name',
                 'last_name',
                 'phone_number',
                 'address',
