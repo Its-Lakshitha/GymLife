@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('member_trainer', function (Blueprint $table) {
+        Schema::create('trainer_sessions', function (Blueprint $table) {
             $table->ulid('id')->primary();
-            $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
             $table->foreignUlid('trainer_id')->constrained()->cascadeOnDelete();
-            $table->date('assigned_from');
-            $table->date('assigned_until')->nullable();
-            $table->boolean('is_active')->default(true);
+            $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
+            $table->dateTime('session_start');
+            $table->dateTime('session_end')->nullable();
+            $table->text('notes')->nullable();
+            $table->enum('status', ['scheduled', 'completed', 'canceled', 'missed'])->default('scheduled');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('member_trainer');
+        Schema::dropIfExists('trainer_sessions');
     }
 };
