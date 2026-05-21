@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('member_trainer', function (Blueprint $table) {
             $table->id();
+            $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
+            $table->foreignUlid('trainer_id')->constrained()->cascadeOnDelete();
+            $table->date('assigned_from');
+            $table->date('assigned_until')->nullable();
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
