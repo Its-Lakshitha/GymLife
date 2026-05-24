@@ -93,4 +93,14 @@ class User extends Authenticatable
             ->map(fn ($word) => Str::substr($word, 0, 1))
             ->implode('');
     }
+
+    public function MemberProfile()
+    {
+        return $this->hasOne(Member::class);
+    }
+
+    public function TrainerProfile()
+    {
+        return $this->hasOne(Trainer::class);
+    }
 }

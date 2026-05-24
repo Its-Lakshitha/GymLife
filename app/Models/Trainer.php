@@ -29,6 +29,11 @@ class Trainer extends Model
         'deleted_at' => 'datetime',
     ];
 
+    public function scopeAvailable($query)
+    {
+        return $query->where('is_available', true);
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);
