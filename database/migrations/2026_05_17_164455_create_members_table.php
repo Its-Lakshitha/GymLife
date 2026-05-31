@@ -17,18 +17,12 @@ return new class extends Migration
             $table->string('member_code')->unique();
             $table->string('emergency_contact_name')->nullable();
             $table->string('emergency_contact_phone')->nullable();
-            $table->string('medical_notes')->nullable();
-            $table->text('fitness_goals')->nullable();
-            $table->decimal('height', 8, 2)->nullable();
-            $table->decimal('weight', 8, 2)->nullable();
             $table->enum('membership_status', [
                 'active',
                 'expired',
                 'paused',
                 'cancelled',
             ])->default('active');
-
-            $table->string('qr_code')->unique()->nullable();
             $table->timestamps('joined_at')->nullable();
             $table->timestamps();
         });

@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
 
 enum memberStatus : String
@@ -14,21 +16,16 @@ enum memberStatus : String
     case Paused = 'paused';
     case Cancelled = 'cancelled';
 }
-class Member extends Model
+class Member extends Model implements HasMedia
 {
-    use HasFactory, HasUlids;
+    use HasFactory, HasUlids, InteractsWithMedia;
 
     protected $fillable = [
         'user_id',
         'member_code',
         'emergency_contact_name',
         'emergency_contact_phone',
-        'medical_notes',
-        'fitness_goals',
-        'height',
-        'weight',
         'membership_status',
-        'qr_code',
         'joined_at',
     ];
 
@@ -59,5 +56,10 @@ class Member extends Model
     public function trainingSessions()
     {
         return $this->hasMany(Session::class);
+    }
+
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('medical_reports');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -102,5 +103,12 @@ class User extends Authenticatable
     public function TrainerProfile()
     {
         return $this->hasOne(Trainer::class);
+    }
+
+    public function getAgeAttribute(): ?int
+    {
+        return $this->date_of_birth
+            ? Carbon::parse($this->date_of_birth)->age
+            : null;
     }
 }

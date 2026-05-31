@@ -46,8 +46,9 @@
     42 => 'OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider',
     43 => 'Postare\\BladeMdi\\BladeMdiServiceProvider',
     44 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
-    45 => 'App\\Providers\\AppServiceProvider',
-    46 => 'App\\Providers\\FortifyServiceProvider',
+    45 => 'Spatie\\MediaLibrary\\MediaLibraryServiceProvider',
+    46 => 'App\\Providers\\AppServiceProvider',
+    47 => 'App\\Providers\\FortifyServiceProvider',
   ),
   'eager' => 
   array (
@@ -83,8 +84,9 @@
     29 => 'OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider',
     30 => 'Postare\\BladeMdi\\BladeMdiServiceProvider',
     31 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
-    32 => 'App\\Providers\\AppServiceProvider',
-    33 => 'App\\Providers\\FortifyServiceProvider',
+    32 => 'Spatie\\MediaLibrary\\MediaLibraryServiceProvider',
+    33 => 'App\\Providers\\AppServiceProvider',
+    34 => 'App\\Providers\\FortifyServiceProvider',
   ),
   'deferred' => 
   array (

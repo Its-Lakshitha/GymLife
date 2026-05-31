@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('specialization');
             $table->integer('experience_years')->default(0);
             $table->text('bio')->nullable();
+            $table->longText('description')->nullable();
             $table->decimal('rating', 3, 2)->default(0);
             $table->boolean('is_available')->default(true);
             $table->timestamps();
