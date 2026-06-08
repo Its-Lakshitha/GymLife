@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('medical_reports', function (Blueprint $table) {
+        Schema::create('trainer_certifications', function (Blueprint $table) {
             $table->ulid('id')->primary();
-            $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
-            $table->string('title');
+            $table->foreignUlid('trainer_id')->constrained()->cascadeOnDelete();
+            $table->string('certification_name');
+            $table->string('issuing_organization')->nullable();
+            $table->date('issue_date')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('medical_reports');
+        Schema::dropIfExists('trainer_certifications');
     }
 };

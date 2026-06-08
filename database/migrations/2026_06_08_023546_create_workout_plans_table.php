@@ -11,10 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('medical_reports', function (Blueprint $table) {
+        Schema::create('workout_plans', function (Blueprint $table) {
             $table->ulid('id')->primary();
             $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
-            $table->string('title');
+            $table->foreignUlid('trainer_id')->constrained()->cascadeOnDelete();
+            $table->string('created_by');
+            $table->string('goal');
+            $table->string('start_date');
+            $table->string('duration_days');
+            $table->string('days_per_week');
+            $table->text('plan_description');
             $table->timestamps();
         });
     }
@@ -24,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('medical_reports');
+        Schema::dropIfExists('workout_plans');
     }
 };

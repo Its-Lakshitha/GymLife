@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('medical_reports', function (Blueprint $table) {
+        Schema::create('workout_requests', function (Blueprint $table) {
             $table->ulid('id')->primary();
             $table->foreignUlid('member_id')->constrained()->cascadeOnDelete();
-            $table->string('title');
+            $table->string('goal');
+            $table->string('days_per_week');
+            $table->string('hours_per_day');
+            $table->text('additional_notes')->nullable();
+            $table->enum('status', ['pending', 'accepted', 'rejected'])->default('pending');
             $table->timestamps();
         });
     }
@@ -24,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('medical_reports');
+        Schema::dropIfExists('workout_requests');
     }
 };
