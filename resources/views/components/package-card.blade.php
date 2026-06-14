@@ -1,11 +1,11 @@
 <div
-    class="bg-white  shadow-lg px-8 py-14 w-full md:w-2/3 lg:w-1/3 text-center hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-2xl font-semibold mb-4">Class drop-in</h3>
+    class="bg-white dark:bg-gray-800/60 shadow-lg px-8 py-14 w-full md:w-2/3 lg:w-1/3 text-center hover:shadow-2xl transition-all duration-300">
+    <h3 class="text-2xl dark:text-white font-semibold mb-4">Class drop-in</h3>
     <div class="mb-6">
         <h2 class="text-5xl font-bold text-red-500">$39.0</h2>
-        <span class="text-gray-500 text-sm uppercase">Single Class</span>
+        <span class="text-gray-500 dark:text-white text-sm uppercase">Single Class</span>
     </div>
-    <ul class="text-gray-600 space-y-2 mb-8">
+    <ul class="text-gray-600 dark:text-gray-50 space-y-2 mb-8">
         <li>Free riding</li>
         <li>Unlimited equipments</li>
         <li>Personal trainer</li>
@@ -14,7 +14,7 @@
         <li>No time restriction</li>
     </ul>
     <a href="#"
-       class="inline-block bg-red-500 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-700 transition-all duration-300">
+       class="inline-block bg-red-500 text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 transition-all duration-300">
         Enroll now
     </a>
     <a href="#"
