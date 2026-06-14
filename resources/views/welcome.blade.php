@@ -442,7 +442,7 @@
 
             <!-- Phone Numbers -->
             <div class="flex flex-col justify-center sm:flex-row items-center sm:items-start space-y-4 gt-text">
-                <x-hugeicons-smart-phone-01/>
+                <x-heroicon-s-phone/>
                 <ul class="flex space-x-2">
                     <li class="text-gray-300">125-711-811</li>
                     <li class="text-gray-300">
