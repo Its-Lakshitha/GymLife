@@ -57,7 +57,7 @@
 
             <div class="mb-6">
                 <h6 class="text-gray-200 font-medium leading-snug">
-                    <a href="#" class="hover:text-blue-400 transition">Physical fitness may help prevent depression,
+                    <a href="#" class="hover:text-red-500 transition">Physical fitness may help prevent depression,
                         anxiety</a>
                 </h6>
                 <ul class="flex gap-4 text-sm text-gray-500 mt-2">
@@ -68,7 +68,7 @@
 
             <div>
                 <h6 class="text-gray-200 font-medium leading-snug">
-                    <a href="#" class="hover:text-blue-400 transition">Fitness: The best exercise to lose belly fat and
+                    <a href="#" class="hover:text-red-500 transition">Fitness: The best exercise to lose belly fat and
                         tone up...</a>
                 </h6>
                 <ul class="flex gap-4 text-sm text-gray-500 mt-2">
@@ -87,7 +87,7 @@
             <script>document.write(new Date().getFullYear());</script>
             All rights reserved | Made with
             <i class="fa fa-heart text-red-500"></i> by
-            <a href="https://colorlib.com" target="_blank" class="text-blue-400 hover:underline">Colorlib</a>
+            <a href="https://colorlib.com" target="_blank" class="text-red-500 hover:underline">Its Lakshitha</a>
         </p>
     </div>
 </footer>

@@ -29,6 +29,14 @@ Route::get('/contact-us', function () {
     return view('contact-us');
 })->name('contact');
 
+Route::get('/bmi-calculator', function () {
+    return view('bmi-calculator');
+})->name('bmi');
+
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
+
 Route::get('/classes', function () {
     return view('classes');
 })->name('classes');

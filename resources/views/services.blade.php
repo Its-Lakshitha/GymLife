@@ -90,7 +90,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Choose
                     Plan</a>
             </div>
@@ -122,7 +122,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Choose
                     Plan</a>
             </div>
@@ -154,7 +154,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Request
                     Quote</a>
             </div>
@@ -196,7 +196,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>
@@ -228,7 +228,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>
@@ -260,7 +260,7 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
+                <a href="#"
                    class="mt-auto inline-flex items-center px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Start
                     Now</a>
             </div>

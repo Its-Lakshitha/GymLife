@@ -3,64 +3,55 @@
     <!-- Hero Section -->
     <section class="relative w-full h-screen overflow-hidden">
         <!-- Slider main container -->
-        <div class="swiper hero-slider w-full h-full">
-            <div class="swiper-wrapper">
+        <div class="hero-slider-slick w-full h-full">
 
-                <!-- Slide 1 -->
-                <div class="swiper-slide relative">
-                    <div class="absolute inset-0 bg-cover bg-center"
-                         style="background-image: url('{{ asset('img/hero/hero-1.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div> <!-- Dark overlay -->
+            <!-- Slide 1 -->
+            <div class="relative h-screen w-full">
+                <div class="absolute inset-0 bg-cover bg-center"
+                     style="background-image: url('{{ asset('img/hero/hero-1.jpg') }}');"></div>
+                <div class="absolute inset-0 bg-black/40"></div> <!-- Dark overlay -->
 
-                    <div class="container mx-auto px-4 h-full flex items-center justify-end">
-                        <div class="hi-text text-right text-white max-w-lg">
-                            <span
-                                class="block text-lg uppercase tracking-widest text-red-400 mb-3">Shape your body</span>
-                            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-                                Be <strong class="text-red-500">strong</strong> training hard
-                            </h1>
-                            <a href="#"
-                               class="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full transition primary-btn">
-                                Get Info
-                            </a>
-                        </div>
+                <div class="container mx-auto px-4 h-full flex items-center justify-end relative z-10">
+                    <div class="hi-text text-right text-white max-w-lg">
+                        <span
+                            class="block text-lg uppercase tracking-widest text-red-400 mb-3">Shape your body</span>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                            Be <strong class="text-red-500">strong</strong> training hard
+                        </h1>
+                        <a href="#"
+                           class="primary-btn-outline !text-white transition-all duration-300 hover:bg-red-500 hover:border-red-500 mt-5">
+                            Get Info
+                        </a>
                     </div>
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide relative">
-                    <div class="absolute inset-0 bg-cover bg-center"
-                         style="background-image: url('{{ asset('img/hero/hero-2.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div>
-
-                    <div class="container mx-auto h-full flex items-center justify-end px-6">
-                        <div class="hi-text text-right text-white max-w-lg">
-                            <span
-                                class="block text-lg uppercase tracking-widest text-red-400 mb-3">Shape your body</span>
-                            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-                                Be <strong class="text-red-500">strong</strong> training hard
-                            </h1>
-                            <a href="#"
-                               class="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full transition primary-btn">
-                                Get Info
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <!-- Swiper Navigation -->
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
+            <!-- Slide 2 -->
+            <div class="relative h-screen w-full">
+                <div class="absolute inset-0 bg-cover bg-center"
+                     style="background-image: url('{{ asset('img/hero/hero-2.jpg') }}');"></div>
+                <div class="absolute inset-0 bg-black/40"></div>
 
-            <!-- Pagination (dots) -->
-            <div class="swiper-pagination"></div>
+                <div class="container mx-auto h-full flex items-center justify-end px-6 relative z-10">
+                    <div class="hi-text text-right text-white max-w-lg">
+                        <span
+                            class="block text-lg uppercase tracking-widest text-red-400 mb-3">Shape your</span>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                            Be <strong class="text-red-500">strong</strong> training hard
+                        </h1>
+                        <a href="#"
+                           class="primary-btn-outline !text-white transition-all duration-300 hover:bg-red-500 hover:border-red-500 mt-5">
+                            Get Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="">
 
             <!-- Section Title -->
@@ -143,7 +134,7 @@
     </section>
 
     <!-- Our Classes Section -->
-    <section class="container mx-auto px-4 py-20 ">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="container mx-auto px-6">
 
             <!-- Section Title -->
@@ -237,7 +228,7 @@
 
     <!-- Banner --->
     <section
-        class="relative bg-cover bg-center bg-no-repeat py-20"
+        class="relative bg-cover bg-center bg-no-repeat py-20 fade-in-section"
         style="background-image: url('{{ asset('img/banner-bg.jpg') }}');"
     >
         <div class="container mx-auto px-4 z-10">
@@ -258,12 +249,10 @@
                 </div>
             </div>
         </div>
-        {{--        <!-- Optional overlay for better contrast -->--}}
-        {{--        <div class="absolute inset-0 bg-black/50"></div>--}}
     </section>
 
     <!--- Planning packages -->
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-20 fade-in-section">
         <div class="container mx-auto px-4">
             <!-- Section Title -->
             <div class="text-center mb-16">
@@ -283,7 +272,7 @@
     </section>
 
     <!-- Gallery --->
-    <section class="gallery-section">
+    <section class="gallery-section fade-in-section">
         <div class="gallery">
             <div>
 
@@ -340,7 +329,7 @@
     </section>
 
     <!--- Coaches --->
-    <section class="container mx-auto px-4 py-16">
+    <section class="container mx-auto px-4 py-16 fade-in-section">
         <div class="">
             <!-- Section Header -->
             <div
@@ -463,3 +452,19 @@
 
 
 </x-app-layout>
+
+<script>
+    jQuery(function ($) {
+        $('.hero-slider-slick').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 4000,
+            pauseOnHover: false
+        });
+    });
+</script>

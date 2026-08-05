@@ -13,7 +13,7 @@
     </section>
 
     <!-- Classes Section -->
-    <section class="classes-section py-20 px-4 fade-in-section">
+    <section class="py-20 px-4 fade-in-section">
         <div class="container mx-auto">
             <div class="text-center mb-16">
                 <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">Our Classes</span>
@@ -24,11 +24,14 @@
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <div class="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                          style="background-image: url('{{ asset('img/classes/class-1.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <span class="text-red-500 font-bold uppercase text-sm mb-2 block">Strength</span>
                         <h4 class="text-2xl font-bold text-white mb-4">Weight Lifting</h4>
-                        <div class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div
+                            class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                             <div class="flex items-center gap-2">
                                 <x-heroicon-o-user class="w-5 h-5 text-red-500"/>
                                 <span>John Doe</span>
@@ -45,11 +48,14 @@
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <div class="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                          style="background-image: url('{{ asset('img/classes/class-2.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <span class="text-red-500 font-bold uppercase text-sm mb-2 block">Cardio</span>
                         <h4 class="text-2xl font-bold text-white mb-4">Indoor Cycling</h4>
-                        <div class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div
+                            class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                             <div class="flex items-center gap-2">
                                 <x-heroicon-o-user class="w-5 h-5 text-red-500"/>
                                 <span>Jane Smith</span>
@@ -66,11 +72,14 @@
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <div class="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                          style="background-image: url('{{ asset('img/classes/class-3.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <span class="text-red-500 font-bold uppercase text-sm mb-2 block">Yoga</span>
                         <h4 class="text-2xl font-bold text-white mb-4">Mind & Body</h4>
-                        <div class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div
+                            class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                             <div class="flex items-center gap-2">
                                 <x-heroicon-o-user class="w-5 h-5 text-red-500"/>
                                 <span>Sarah Lee</span>
@@ -87,11 +96,14 @@
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <div class="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                          style="background-image: url('{{ asset('img/classes/class-4.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <span class="text-red-500 font-bold uppercase text-sm mb-2 block">Fitness</span>
                         <h4 class="text-2xl font-bold text-white mb-4">Core Strength</h4>
-                        <div class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div
+                            class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                             <div class="flex items-center gap-2">
                                 <x-heroicon-o-user class="w-5 h-5 text-red-500"/>
                                 <span>Mike Ross</span>
@@ -108,11 +120,14 @@
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <div class="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                          style="background-image: url('{{ asset('img/classes/class-5.jpg') }}');"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-90"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <span class="text-red-500 font-bold uppercase text-sm mb-2 block">Advanced</span>
                         <h4 class="text-2xl font-bold text-white mb-4">Body Building</h4>
-                        <div class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                        <div
+                            class="flex items-center justify-between text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                             <div class="flex items-center gap-2">
                                 <x-heroicon-o-user class="w-5 h-5 text-red-500"/>
                                 <span>Alex Turner</span>
@@ -129,7 +144,7 @@
     </section>
 
     <!-- Class Timetable Section -->
-    <section class="timetable-section py-20 bg-gray-50 dark:bg-gray-900 fade-in-section">
+    <section class="timetable-section py-20 fade-in-section">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="text-red-500 uppercase tracking-widest font-semibold text-sm">Class Timetable</span>
@@ -227,20 +242,20 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Registration Now To Get More Deals</h2>
             <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Where health, beauty and fitness meet. Join us now to get
                 special offers and start your journey.</p>
-            <a href="{{ route('register') }}"
-               class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full transition-transform hover:scale-105">
+            <a href="#"
+               class="primary-btn-outline !text-white transition-all duration-300 hover:bg-red-500 hover:border-red-500">
                 JOIN WITH US
             </a>
         </div>
     </section>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const day = new Date().getDay(); // 0 (Sun) - 6 (Sat)
             // Map JS day to table column index (1-based, skipping Time column)
             // Mon(1)->1, Tue(2)->2, ..., Sat(6)->6, Sun(0)->7
             const colIndex = day === 0 ? 7 : day;
-            
+
             // Highlight header
             const headers = document.querySelectorAll('.timetable-section th');
             if (headers[colIndex]) {
