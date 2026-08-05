@@ -45,6 +45,14 @@ Route::get('/team', function () {
     return view('team');
 })->name('team');
 
+Route::get('/bmi-calculator', function () {
+    return view('bmi-calculator');
+})->name('bmi.calculator');
+
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
+
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
